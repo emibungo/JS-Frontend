@@ -5,7 +5,7 @@ const Nav = require("./Nav")
 
 function MainHeader() {
     return Deact.create("header", {}, [
-        AppTitle(),
+        AppTitle("WCCI Student App"),
         Nav(
             {},
             Button(
