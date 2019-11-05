@@ -17,7 +17,8 @@ function StudentsButton() {
     return Button( 
         {
             class: "students-button",
-            onclick: renderStudents()
+            onclick: renderStudents,
+            style: `border-color: #eee, color: #333`
         }
     },
     "Get Students!"
