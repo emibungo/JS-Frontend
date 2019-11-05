@@ -8,7 +8,7 @@ function StudentsButton() {
         Http.getRequest("http://localhost:3000/students", function({ students }) {
             students.forEach(student => {
                 Deact.render(
-                    AppTitle(student.name, "yellow"),
+                    AppTitle(student.name, "black"),
                     document.querySelector(".app")
                 );
             })
@@ -20,7 +20,6 @@ function StudentsButton() {
             onclick: renderStudents,
             style: `border-color: #eee, color: #333`
         }
-    },
     "Get Students!"
     )
 }
